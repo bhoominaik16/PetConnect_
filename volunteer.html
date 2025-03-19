@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetConnect</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-5 fw-semibold" href="main.html">PetConnect</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            </ul>
+            <button type="button" class="btn btn-danger m-2" data-bs-toggle="modal" data-bs-target="#rescueModal">Emergency Rescue</button>
+          </div>
+        </div>
+    </nav>
+    <h1 class="text-center">Volunteers: the heartbeat of rescue.</h1>
+    <div class="container mb-4">
+      <div class="row">
+        <div class="col mx-4 text-center">
+          <img style="width: 525px;" src="images/Volunteer.jpeg" alt="Looks some problem! Image can't load">
+          <p class="fs-5">Volunteering to help animals offers vital support to those in need, whether through care, rescue, or rehabilitation. In return, you experience the deep love and gratitude of the animals they help, building a bond of compassion. It's a rewarding exchange, where kindness given comes back as unconditional love, fostering a sense of purpose and connection.</p>
+          <img style="width: 525px;" src="images/Volunteer_.jpeg" alt="Looks some problem! Image can't load">
+        </div>
+        <div class="col mx-4">
+          <div> <!--------------Volunteering form----------------->  
+            <form class="border border-secondary-subtle p-3 rounded-4 bg-light" >
+              <h4 class="text-center">To Volunteer, Fill the form</h4>
+              <hr class="featurette-divider my-1">
+
+              <div class="mb-4">
+                <label for="exampleInputName" class="form-label fw-bold">Preferred Animal Shelter</label>
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" >
+                      <option selected>Select Animal Shelter you want to Volunteer</option>
+                      <option value="1">Paws Haven Animal Shelter, Chembur</option>
+                      <option value="2">Whisker Woods Rescue Center, Thane</option>
+                      <option value="3">Furry Friends Sanctuary, Pune</option>
+                      <option value="4">Safe Paws Animal Home, Panvel</option>
+                    </select>
+                  </div>
+            </div>
+              <div class="mb-3">
+                <label for="exampleInputName" class="form-label fw-bold">Full Name</label>
+                <input type="text" class="form-control" id="exampleInputName" aria-describedby="Name" placeholder="Enter Your Full Name" required>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputNumber" class="form-label fw-bold">Mobile Number</label>
+                <input type="tel" class="form-control" id="exampleInputNumber" aria-describedby="Number" pattern="[0-9]{10}" placeholder="Enter Your Mobile Number" required>
+              </div>
+              <div class="mb-3">
+                 <label for="exampleInputEmail1" class="form-label fw-bold">Email address</label>
+                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="email" placeholder="Enter your Email Address" required>
+               </div>
+              <div class="mb-3">
+                <label for="exampleInputLandmark" class="form-label fw-bold">Current Address</label>
+                <input type="text" class="form-control" id="exampleInputLandmark" aria-describedby="Address" placeholder="Enter your current Address" required>
+              </div>
+              <div class="mb-3 form-check">
+                 <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                 <label class="form-check-label" for="exampleCheck1">Is the current address same as permanent address?</label>
+               </div>
+               <div class="mb-3">
+                 <label for="exampleInputTextArea" class="form-label fw-bold fw-bold">Why do you want to Volunteer?</label>
+                 <input type="text" class="form-control" id="exampleInputTextArea" aria-describedby="TextArea" placeholder="Reason to Volunteer" style="height: 100px" required>
+               </div>
+               <div class="mb-3">
+                 <label for="exampleInputTextArea" class="form-label fw-bold fw-bold">What are your views about Animal Shelter?</label>
+                 <input type="text" class="form-control" id="exampleInputTextArea" aria-describedby="TextArea" placeholder="Give your Thoughts" style="height: 100px" required>
+               </div>
+               <div class="mb-3">
+                 <label for="exampleInputTextArea" class="form-label fw-bold fw-bold">Do you have any prior experience? If yes, then describe your role and experience.</label>
+                 <input type="text" class="form-control" id="exampleInputTextArea" aria-describedby="TextArea" placeholder="Share your Experience" style="height: 100px" required>
+               </div>
+              <button type="submit" class="btn btn-dark" >Submit</button>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--------------------- Modal for emergency rescue form ---------------------------------------->
+    <div class="modal fade" id="rescueModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Emergency Rescue Form</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="border border-secondary-subtle p-3 rounded-4 bg-light">
+                    <div class="mb-4">
+                        <label for="exampleInputName" class="form-label fw-bold">Animal</label>
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example" >
+                              <option selected>Select Animal Type</option>
+                              <option value="1">Dog</option>
+                              <option value="2">Cat</option>
+                              <option value="3">Bird</option>
+                              <option value="4">Other</option>
+                            </select>
+                          </div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="exampleInputName" class="form-label fw-bold">Animal Shelter</label>
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect" aria-label="Floating label select example" >
+                              <option selected>Select Nearest Animal Shelter</option>
+                              <option value="1">A</option>
+                              <option value="2">C</option>
+                              <option value="3">B</option>
+                              <option value="4">D</option>
+                            </select>
+                          </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputName" class="form-label fw-bold">Full Name</label>
+                      <input type="text" class="form-control" id="exampleInputName" aria-describedby="Name" placeholder="Enter Your Full Name" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputLandmark" class="form-label fw-bold">Landmark/Address</label>
+                      <input type="text" class="form-control" id="exampleInputLandmark" aria-describedby="Landmark" placeholder="Enter the Landmark/Address" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputNumber" class="form-label fw-bold">Mobile Number</label>
+                      <input type="tel" class="form-control" id="exampleInputNumber" aria-describedby="Number" pattern="[0-9]{10}" placeholder="Enter Your Mobile Number" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPincode" class="form-label fw-bold">Pincode</label>
+                      <input type="tel" class="form-control" id="exampleInputPincode" aria-describedby="Pincode"  placeholder="Enter the Pincode" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputTextArea" class="form-label fw-bold fw-bold">Injury</label>
+                      <input type="text" class="form-control" id="exampleInputTextArea" aria-describedby="TextArea" placeholder="Describe the Injury" style="height: 100px" required>
+                    </div>
+                    <button type="submit" class="btn btn-dark" >Submit</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</body>
+</html>
